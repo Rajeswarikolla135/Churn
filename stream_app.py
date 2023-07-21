@@ -20,6 +20,7 @@ def main():
     st.sidebar.info('This app is created to predict Customer Churn')
     st.sidebar.image(image2)
     st.title("Predicting Customer Churn")
+    file_upload = None  # Initialize file_upload outside of if-else block
     if add_selectbox == 'Online':
         gender = st.selectbox('Gender:', ['male', 'female'])
         seniorcitizen= st.selectbox(' Customer is a senior citizen:', [0, 1])
